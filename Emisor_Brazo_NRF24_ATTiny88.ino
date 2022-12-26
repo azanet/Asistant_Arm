@@ -15,6 +15,14 @@ son los numeros de pin que vamos a usar para CS y CE. */
 const int pinCE = 15;
 const int pinCSN = 14;
 RF24 radio(pinCE, pinCSN); // CE, CSN
+/*
+El resto de pines del NRF a conectar al ATTiny son los del SPI:
+NRF-MOSI > 11
+NRF-SCK  > 13
+NRF-MISO > 12
+*/
+
+
  
 /* Creamos una matriz de bytes que represente la 
 direccion con la que se reconoceran entre si los 
